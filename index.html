@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>harry fitness</title>
+
     <style>
         body {
+            Font-family: 'Permanent Marker', cursive;
             color: white;
             background: url(fitness-1882721_1920.jpg);
             margin: 0px;
@@ -15,17 +17,15 @@
         }
 
         .left {
-            border:2px solid rgb(185, 13, 13);
-            display:inline-block;
-            position:absolute;
+            /* border: 2px solid rgb(185, 13, 13); */
+            display: inline-block;
+            position: absolute;
             left: 32px;
             top: 19px;
-
-
         }
 
         .mid {
-            border:2px solid yellow;
+            /* border: 2px solid yellow; */
             display: block;
             width: 37%;
             margin: 22px auto;
@@ -36,40 +36,89 @@
         }
 
         .right {
-            position:absolute;
+            position: absolute;
             right: 32px;
-            top:19px;
+            top: 19px;
             display: inline-block;
-            border:2px solid green;
+            /* border: 2px solid green; */
 
 
 
         }
-        .left img{
+
+        .left img {
             width: 250px;
-            filter: invert(100%);
-           
+            ;
+
 
         }
-        .navbar li{
+
+        .navbar li {
             display: inline-block;
             font-size: 16px;
-            
+
         }
-        .navbar li a{
+
+        .navbar li a {
             color: white;
             text-decoration: none;
             padding: 20px 5px;
-        
-        }
-        .navbar li a:hover , .navbar li a.active{
-        text-decoration: underline;
-        color: grey;
 
-        
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .btn {
+            Font-family: 'Permanent Marker', cursive;
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 13px;
+            border: 2px solid grey;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 180px 50px;
+            border-radius: 5px;
+            padding: 75px;
+            width: 20%;
+            font-size: 8px;
+
+
+        }
+
+
+
+        .btn:hover {
+            background-color: grey;
+
+        }
+
+        .form-group input {
+            Font-family: 'Permanent Marker', cursive;
+            text-align: center;
+            display: block;
+            width: 300px;
+            padding: 9px;
+            border: 2px soldi red;
+            margin: 10px auto;
+            font-size: 10px;
+            border-radius: 20px;
+
+
         }
     </style>
 </head>
+<link
+    href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:ital,wght@0,700;1,900&family=Titan+One&display=swap"
+    rel="stylesheet">
 
 <body>
     <header class="header">
@@ -77,10 +126,10 @@
         <div class="left">
             <img src="logo.jpg" alt="">
             <div>HARRY FITNESS</div>
-    
 
 
-    
+
+
         </div>
 
         <!-- mid box for navigation -->
@@ -96,11 +145,31 @@
 
         <!-- right class for buttons -->
         <div class="right">
-     <button class="btn">Call us now</button>
-     <button class="btn">Email now</button>
+            <button class="btn">Call us now</button>
+            <button class="btn">Email now</button>
 
         </div>
+        <div class="container">
+            <h1>JOIN THE BEST GYM OF DELHI NOW</h1>
+            <form action="noaction.php">
+                <div class="form-group">
+                    <input type="text" name="" placeholder="ENTER YOUR NAME">
+                </div>
 
+                <div class="form-group">
+                    <input type="text" name="" placeholder="AGE">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="" placeholder="ADDRESS">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="" placeholder="GENDER">
+                </div>
+                <button class="btn">SUBMIT</button>
+            </form>
+        </div>
 
 
 
